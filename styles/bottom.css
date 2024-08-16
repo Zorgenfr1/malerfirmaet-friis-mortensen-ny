@@ -1,0 +1,59 @@
+.bottom{
+    background-color: rgb(136, 11, 11);
+    padding: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .head{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.bottom .body-text{
+    margin-top: 7px;
+    font-size: 20px;
+    color: white;
+    width: 550px;
+}
+
+
+.facebook{
+    height: 50px;
+}
+
+.facebook img{
+    height: 100%;
+}
+
+
+.input-kontakt{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-kontakt p{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.input-kontakt input{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 5px;
+    background-color: rgb(197, 18, 18);
+    border-style: solid;
+    border-color: black;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.input-kontakt input::placeholder{
+    color: black;
+    font-weight: 600;
+}
