@@ -11,6 +11,17 @@
         <link rel="stylesheet" href="styles/section-2.css">
         <link rel="stylesheet" href="styles/img-scroller.css">
         <link rel="stylesheet" href="styles/bottom.css">
+        <script src="script.js" type="text/javascript"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "4ctVRqqtVnFrGRopD",
+                });
+            })();
+        </script>
     </head>
     <body>
         <header class="header">
@@ -112,9 +123,10 @@
 
             <div class="input-kontakt">
                 <p>Kontakt os</p>
-                <input type="text" placeholder="Navn">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Beskriv kort dit Projekt">
+                <input type="text" id="fullName" placeholder="Navn">
+                <input type="email" id="email-id" placeholder="Email">
+                <textarea rows="4" id="message" placeholder="Beskriv kort dit Projekt"></textarea>
+                <button onclick="SendMail();">Send</button>
             </div>
 
         </section>
