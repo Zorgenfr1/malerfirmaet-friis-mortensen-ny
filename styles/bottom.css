@@ -41,19 +41,36 @@
     font-weight: bold;
 }
 
-.input-kontakt input{
+.input-kontakt input, .input-kontakt textarea{
     width: 400px;
     font-size: 20px;
     margin-top: 5px;
     background-color: rgb(197, 18, 18);
     border-style: solid;
     border-color: black;
+    border-width: 2px;
     color: black;
     font-weight: bold;
     
 }
 
-.input-kontakt input::placeholder{
+.input-kontakt button{
+    margin-top: 5px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(197, 18, 18);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.input-kontakt button:hover{
+    box-shadow: 0 0 12px rgba(250, 250, 250, 1);
+}
+
+.input-kontakt input::placeholder, .input-kontakt textarea::placeholder{
     color: black;
     font-weight: 600;
 }
