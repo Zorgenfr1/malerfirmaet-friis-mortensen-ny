@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for(let image of images){
         image.addEventListener("click", function(e){
             viewImage.style.display = "flex";
+            viewImage.querySelector("img").src = e.target.src;
             console.log("Display set to flex");
         })
     };
