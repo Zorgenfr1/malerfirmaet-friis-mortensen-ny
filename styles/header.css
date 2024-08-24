@@ -29,6 +29,8 @@ a{
 
 .header .main-menu .menu-items{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .menu-items li a{
@@ -39,9 +41,21 @@ a{
     font-size: 20px;
 }
 
+.header .menu-items li a img{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
 .header .menu-items li a:hover {
     color:  red;
     cursor: pointer;
+}
+
+.header .menu-items li a img:hover{
+    opacity: 0.7;
 }
 
 .container{
@@ -59,6 +73,7 @@ a{
 .header button{
     font-size: 20px;
     font-weight: 600;
+    width: 119px;
     color: white;
     background-color: rgb(250 0 0);
     cursor: pointer;

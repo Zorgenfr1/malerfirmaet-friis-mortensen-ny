@@ -1,4 +1,4 @@
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 20cm) {
     .overlay-text{
         font-size: 30px;
         bottom: 50%;
@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 15cm){
     .gallery-grid{
         grid-template-columns: 1fr;
     }
