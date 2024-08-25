@@ -21,6 +21,10 @@
         margin-top: 10px;
     }
 
+    .mail, .telefon{
+        font-size: 25px;
+    }
+
     .section-2{
         display: block;
     }

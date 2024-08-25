@@ -3,7 +3,7 @@ a{
     color: black;
 }
 
-.menu-items{
+.menu-items, .burger-menu-list{
     list-style: none;
 }
 
@@ -25,20 +25,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header .main-menu .menu-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header .menu-items li a{
-    padding: 10px 20px;
-    display: block;
-    font-weight: 600;
-    transition: 0.5s;
-    font-size: 20px;
 }
 
 .header .menu-items li a img{
@@ -88,4 +74,70 @@ a{
 
 .header button:active{
     opacity: 0.6;
+}
+
+@media screen and (min-width: 20.0000001cm) {
+    .header .main-menu .menu-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .menu-items li a{
+        padding: 10px 20px;
+        display: block;
+        font-weight: 600;
+        transition: 0.5s;
+        font-size: 20px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 20cm) {
+    .main-menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: inline-block;
+        object-fit: contain;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    .burger-menu-list{
+        position: absolute;
+        right: -200px;
+        top: 90px;
+        width: 200px;
+        height: 1000px;
+        padding-left: 20px;
+        background-color: white;
+        font-size: 20px;
+        font-weight: 600;
+        transition: right 0.3s ease;
+    }
+
+    .burger-menu-list li a{
+        margin-top: 20px;
+        display: block;
+        transition: color 0.2s, opacity 0.2s;
+    }
+
+    .burger-menu-list li a:hover{
+        color:  red;
+        cursor: pointer;
+    }
+
+    .burger-menu-list li a:active{
+        opacity: 0.7;
+    }
+
+    .burger-menu-list li a img{
+        width: 100px;
+    }
+
 }

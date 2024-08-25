@@ -35,3 +35,18 @@ document.addEventListener("DOMContentLoaded", function() {
         viewImage.style.display = "none";
     })
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let burgerMenu = document.querySelector(".burger-menu img");
+    let burgerMenuList = document.querySelector(".burger-menu-list");
+
+    burgerMenu.addEventListener("click", function(e){
+        if (burgerMenuList.style.right == "-200px"){
+            burgerMenuList.style.right = "0px";
+        }
+        else{
+            burgerMenuList.style.right = "-200px"
+        }
+
+    })
+});
