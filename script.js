@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let burgerMenuList = document.querySelector(".burger-menu-list");
 
     burgerMenu.addEventListener("click", function(e){
-        if (burgerMenuList.style.right == "-200px"){
+        if (burgerMenuList.style.right == "-300px"){
             burgerMenuList.style.right = "0px";
         }
         else{
-            burgerMenuList.style.right = "-200px"
+            burgerMenuList.style.right = "-300px"
         }
 
     })

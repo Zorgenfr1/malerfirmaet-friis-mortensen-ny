@@ -21,6 +21,13 @@
     width: 550px;
 }
 
+.bottom-text-info p{
+    margin: 0px !important;
+}
+
+.bottom-text-info{
+    margin-bottom: 20px;
+}
 
 .facebook{
     height: 50px;
